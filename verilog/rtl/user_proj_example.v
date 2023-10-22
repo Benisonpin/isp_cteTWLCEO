@@ -114,16 +114,17 @@ module user_proj_example #(
     assign rst = (~la_oenb[65]) ? la_data_in[65]: wb_rst_i;
    assign la_data_out = 128'h0000_0000_0000_0000_0000_0000_0000_0000;
    
-    wire  w_uart_txd ;
-    wire  w_uart_rxd ;
-   
-   
-    wire   w_spi_clk ;
-    wire   w_spi_miso  ; 
-    wire   w_spi_mosi  ;
-    wire   [1:0] w_spi_ssel;
-   
-    wire  [19:0] w_gpi, w_gpo, w_gpd;
+       // to replace by Internal UART0 ser tx(pin F7) and ser rx(pin E7)Dsable on oct-17-2023
+   // wire  w_uart_txd ;disable on oct-17-2023
+   // wire  w_uart_rxd ;
+      // to replace by Internal spi master,disable on oct-17-2023
+      // SDI(pin E9), CSB(pin E8), SCK(pin F8) and SDO(pin F9)
+   // wire   w_spi_clk ;
+   // wire   w_spi_miso  ; 
+   // wire   w_spi_mosi  ;
+   // wire   [1:0] w_spi_ssel;
+     // disable on oct-17-2023
+   // wire  [19:0] w_gpi, w_gpo, w_gpd;
     
     wire  [1:0] w_pwm_o;
    
@@ -134,10 +135,10 @@ module user_proj_example #(
    wire w_ledcntrl;
    
    wire w_pwrled;
+       // to replace by Internal spi master,disable on oct-17-2023  
+   //wire w_uart_txd_dir,w_uart_rxd_dir;
    
-   wire w_uart_txd_dir,w_uart_rxd_dir;
-   
-   wire [4:0] w_spi_dir;
+  // wire [4:0] w_spi_dir;
    
    wire w_scl_dir, w_sda_dir;
    
@@ -146,9 +147,9 @@ module user_proj_example #(
    wire w_i2s_dir;
    
    wire ext_aud_mclk;
-   
-   wire jtag_mux;
-   wire qspi_mux;
+      // to replace by Internal spi master,disable on oct-17-2023
+   //wire jtag_mux;
+   //wire qspi_mux;
    
    wire TMS,TDI,TDO,TCK;
    
@@ -166,12 +167,12 @@ module user_proj_example #(
    wire q_io1_i;
    wire q_io2_i;
    wire q_io3_i;
+     // to replace by Internal spi master,disable on oct-17-2023
+   //wire q_spi_clk_o;
+   //wire q_spi_clk_t;
    
-   wire q_spi_clk_o;
-   wire q_spi_clk_t;
-   
-   wire q_spi_ssel_o;
-   wire q_spi_ssel_t;
+   //wire q_spi_ssel_o;
+   //wire q_spi_ssel_t;
 
     // io_in ({io_in[37:27]}),gi
   
@@ -211,31 +212,39 @@ module user_proj_example #(
    assign w_sda_i       = io_in[26];
    assign w_scl_i       = io_in[25];
    
+
+     // to skip the i2s (sound),disable on oct-17-2023
    // i2s mapping
-   assign io_out[29:27] = {w_lrclk,w_bclk,w_audo};
-   assign io_oeb[29:27] = {w_i2s_dir,w_i2s_dir,w_i2s_dir};
+   //assign io_out[29:27] = {w_lrclk,w_bclk,w_audo};
+  // assign io_oeb[29:27] = {w_i2s_dir,w_i2s_dir,w_i2s_dir};
    
    //pwm mapping
    
    assign io_out[31:30] = w_pwm_o;
    assign io_oeb[31:30] = {w_pwm_dir,w_pwm_dir};
    
+
+    // to replace by original,disable on oct-17-2023
    // led control
  //  assign io_out[32]    = w_ledcntrl;
  //  assign io_oeb[32]    = w_led_dir;
-   
+
+  // to replace by original,disable on oct-17-2023 
  //  assign io_out[33]    = 1'b1;
  //  assign io_oeb[33]    = !w_i2s_dir;
  //  assign ext_aud_mclk  = io_in[33];   // external master audio clock
    
+   // to replace by original,disable on oct-17-2023
    //uart mapping
  //  assign io_oeb[35:34] = {w_uart_rxd_dir,w_uart_txd_dir};
   // assign io_out[35:34] = {1'b1,w_uart_txd};
   // assign w_uart_rxd = io_in[35];
 
+// to replace by original,disable on oct-17-2023
         //(UART0 rX,tX),disable port (6:5), oct-17-2023
     //.io_in ({io_in[17:16]})    //change to port (17:16)
 
+// to replace by original,disable on oct-17-2023
    // power led
  //  assign io_out[36]    = w_pwrled;
  //  assign io_oeb[36]    = 1'b0;
