@@ -14,3 +14,6 @@ echo "Installing caravel-lite.."
 git clone -b mpw-9d https://github.com/efabless/caravel-lite /home/benison/isp_cteTWLCEO/caravel --depth=1
 make: Leaving directory '/home/benison/isp_cteTWLCEO'
  
+make.exe --dry-run --always-make --keep-going --print-directory
+'make.exe' ���O�����Υ~���R�O�B�i���檺�{���Χ妸�ɡC
+

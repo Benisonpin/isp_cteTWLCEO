@@ -3902,3 +3902,6 @@ run-precheck: check-pdk check-precheck
 # Finished Make data base on Sun Oct 22 17:40:30 2023
 
  
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+'make.exe' ���O�����Υ~���R�O�B�i���檺�{���Χ妸�ɡC
+
