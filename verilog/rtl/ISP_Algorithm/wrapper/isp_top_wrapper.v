@@ -175,101 +175,8 @@ module isp_top_wrapper
 	end
 	gamma_lut_y #(8) lut0(gamma_table_addr, gamma_table_wdata);
 
-	isp_top #(.BITS(BITS), .WIDTH(WIDTH), .HEIGHT(HEIGHT), .BAYER(BAYER),
-			.GAMMA_TABLE_BITS(8),
-			.NR2D_WEIGHT_BITS(5),
-			.STAT_OUT_BITS(STAT_OUT_BITS),
-			.STAT_HIST_BITS(STAT_HIST_BITS))
-		isp_top_i0 (
-			.pclk(pclk),
-			.rst_n(rst_n),
-		
-			.in_href(in_href),
-			.in_vsync(in_vsync),
-			.in_raw(in_raw),
-		
-			.out_href(out_href),
-			.out_vsync(out_vsync),
-			.out_y(out_y),
-			.out_u(out_u),
-			.out_v(out_v),
-		
-			.dpc_en(EN_DPC), 
-			.blc_en(EN_BLC), 
-			.bnr_en(EN_BNR),
-			.dgain_en(EN_DGAIN),
-			.demosic_en(EN_DEMOSIC),
-			.wb_en(EN_WB),
-			.ccm_en(EN_CCM),
-			.csc_en(EN_CSC),
-			.gamma_en(EN_GAMMA),
-			.nr2d_en(EN_2DNR),
-			.ee_en(EN_EE),
-			.stat_ae_en(EN_STAT_AE),
-			.stat_awb_en(EN_STAT_AWB),
-
-			.dpc_threshold(DPC_THRESHOLD),
-			.blc_b(BLC_B), .blc_gb(BLC_Gb), .blc_gr(BLC_Gr), .blc_r(BLC_R),
-			.nr_level(NR_LEVEL),
-			.dgain_gain(dgain_gain), .dgain_offset(DGAIN_OFFSET),
-			.wb_rgain(wb_rgain), .wb_ggain(wb_ggain), .wb_bgain(wb_bgain),
-			.ccm_rr(CCM_RR), .ccm_rg(CCM_RG), .ccm_rb(CCM_RB),
-			.ccm_gr(CCM_GR), .ccm_gg(CCM_GG), .ccm_gb(CCM_GB),
-			.ccm_br(CCM_BR), .ccm_bg(CCM_BG), .ccm_bb(CCM_BB),
-
-			.gamma_table_clk(gamma_table_clk),
-			.gamma_table_wen(gamma_table_wen),
-			.gamma_table_ren(1'b0),
-			.gamma_table_addr(gamma_table_addr),
-			.gamma_table_wdata(gamma_table_wdata),
-			.gamma_table_rdata(),
-
-			.nr2d_space_kernel({
-					sw66,sw65,sw64,sw63,sw62,sw61,sw60,
-					sw56,sw55,sw54,sw53,sw52,sw51,sw50,
-					sw46,sw45,sw44,sw43,sw42,sw41,sw40,
-					sw36,sw35,sw34,sw33,sw32,sw31,sw30,
-					sw26,sw25,sw24,sw23,sw22,sw21,sw20,
-					sw16,sw15,sw14,sw13,sw12,sw11,sw10,
-					sw06,sw05,sw04,sw03,sw02,sw01,sw00}),
-			.nr2d_color_curve_x({
-					cx8,cx7,cx6,cx5,cx4,cx3,cx2,cx1,cx0}),
-			.nr2d_color_curve_y({
-					cy8,cy7,cy6,cy5,cy4,cy3,cy2,cy1,cy0}),
-
-			.stat_ae_rect_x(AE_RECT_X), .stat_ae_rect_y(AE_RECT_Y), .stat_ae_rect_w(AE_RECT_W), .stat_ae_rect_h(AE_RECT_H),
-			.stat_ae_done(stat_ae_done),
-			.stat_ae_pix_cnt(stat_ae_pix_cnt), .stat_ae_sum(stat_ae_sum),
-			.stat_ae_hist_clk(pclk),
-			.stat_ae_hist_out(in_vsync),
-			.stat_ae_hist_addr(stat_hist_addr),
-			.stat_ae_hist_data(/*stat_ae_hist_data*/),
-
-			.stat_awb_min(AWB_MIN), .stat_awb_max(AWB_MAX),
-			.stat_awb_done(stat_awb_done),
-			.stat_awb_pix_cnt(stat_awb_pix_cnt), .stat_awb_sum_r(stat_awb_sum_r), .stat_awb_sum_g(stat_awb_sum_g), .stat_awb_sum_b(stat_awb_sum_b),
-			.stat_awb_hist_clk(pclk),
-			.stat_awb_hist_out(in_vsync),
-			.stat_awb_hist_addr(stat_hist_addr),
-			.stat_awb_hist_data(/*stat_awb_hist_data*/)
-		);
-
-`ifdef USE_ALGO_AE
-	alg_ae #(BITS) alg_ae_i0(pclk, rst_n, in_vsync, stat_ae_done, 8'd65, stat_ae_pix_cnt, stat_ae_sum+(^stat_ae_hist_data)/*XXX DEBUG*/, dgain_gain, cmos_change_start, cmos_change_done, cmos_exposure, cmos_gain);
-`else
-	assign cmos_exposure = 10'h200;
-	assign cmos_gain = 10'h20;
-	assign dgain_gain = 8'h10;
-`endif
-
-`ifdef USE_ALGO_AWB
-	alg_awb #(BITS) alg_awb_i0(pclk, rst_n, stat_awb_done, stat_awb_pix_cnt, stat_awb_sum_r, stat_awb_sum_g+(^stat_awb_hist_data)/*XXX DEBUG*/, stat_awb_sum_b, wb_rgain, wb_ggain, wb_bgain);
-`else
-	assign wb_rgain = 8'h10;
-	assign wb_ggain = 8'h10;
-	assign wb_bgain = 8'h10;
-`endif
-endmodule
+	
+	
 
 
 
@@ -281,7 +188,7 @@ module gamma_lut_y
 	input [BITS-1:0] index,
 	output [BITS-1:0] value
 );
-	reg [7:0] v;
+	2627reg [7:0] v;
 	assign value = BITS > 8 ? {v, {BITS-8{1'b0}}} : v[7-:BITS];
 	
 	//gamma = 0.7

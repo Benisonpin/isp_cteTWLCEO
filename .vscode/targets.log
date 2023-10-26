@@ -12,7 +12,7 @@ make[1]: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Oct 22 17:40:29 2023
+# Make data base, printed on Thu Oct 26 20:37:20 2023
 
 # Variables
 
@@ -129,7 +129,7 @@ MAKEFILE_LIST := /home/benison/isp_cteTWLCEO/caravel/Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 30236
+VSCODE_PID = 61477
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -271,7 +271,7 @@ MANAGERPID = 1745
 # environment
 LC_MEASUREMENT = lzh_TW
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 30236
+GIO_LAUNCHED_DESKTOP_FILE_PID = 61477
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 43)
 LARGE_FILES_GZ_SPLIT := ./gds/user_proj_example.gds.gz.00.split ./gds/user_project_wrapper.gds.gz.00.split ./caravel/def/caravan_core.def.gz.00.split ./caravel/def/caravel_core.def.gz.00.split ./caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split ./caravel/gds/user_project_wrapper_empty.gds.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM256.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
 # environment
@@ -1802,6 +1802,7 @@ mag2lef-user_project_wrapper: mag/user_project_wrapper.mag uncompress
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 477):
+ 
 	echo "Converting mag file $* to LEF..."
 	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
 		addpath ${PDKPATH}/libs.ref/sky130_ml_xx_hd/mag;\
@@ -2227,7 +2228,6 @@ caravel_timing_slow: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-
 		read_spef -path gpio_defaults_block_24 ./spef/gpio_defaults_block.spef;\
 		read_spef -path gpio_defaults_block_25 ./spef/gpio_defaults_block.spef;\
 		read_spef -path gpio_defaults_block_26 ./spef/gpio_defaults_block.spef;\
- 
 		read_spef -path gpio_defaults_block_27 ./spef/gpio_defaults_block.spef;\
 		read_spef -path gpio_defaults_block_28 ./spef/gpio_defaults_block.spef;\
 		read_spef -path gpio_defaults_block_29 ./spef/gpio_defaults_block.spef;\
@@ -2248,10 +2248,15 @@ caravel_timing_slow: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-
 		echo \" Management Area Interface \";\
 		report_checks -to soc/core_clk -unconstrained -group_count 1;\
 		echo \" User project Interface \";\
+ 
 		report_checks -to mprj/wb_clk_i -unconstrained -group_count 1;\
+ 
 		report_checks -to mprj/wb_rst_i -unconstrained -group_count 1;\
+ 
 		report_checks -to mprj/wbs_cyc_i -unconstrained -group_count 1;\
+ 
 		report_checks -to mprj/wbs_stb_i -unconstrained -group_count 1;\
+ 
 		report_checks -to mprj/wbs_we_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_sel_i[*] -unconstrained -group_count 4;\
 		report_checks -to mprj/wbs_adr_i[*] -unconstrained -group_count 32;\
@@ -2734,7 +2739,6 @@ rcx-user_project_wrapper: def/user_project_wrapper.def
 		report_checks -fields {capacitance slew input_pins nets fanout} -path_delay min_max -group_count 5;\
 		report_check_types -max_slew -max_capacitance -max_fanout -violators;\
 		report_checks -to [all_outputs] -group_count 1000;\
- 
 		" > ./def/tmp/sta_$*.tcl 
 	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
 	sh -c "cd /caravel; openroad -exit ./def/tmp/sta_$*.tcl |& tee ./def/tmp/sta_$*.log" 
@@ -2755,6 +2759,7 @@ gds/user_project_wrapper.gds:
 #  Modification time never checked.
 #  File has not been updated.
 
+ 
 gds/user_project_wrapper.gds.gz: gds/user_project_wrapper.gds
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: 'gds/user_project_wrapper.gds'
@@ -2842,9 +2847,12 @@ def/user_project_wrapper.def:
 # strcache performance: lookups = 511 / hit rate = 68%
 # hash-table stats:
 # Load=160/8192=2%, Rehash=0, Collisions=0/511=0%
-# Finished Make data base on Sun Oct 22 17:40:30 2023
+# Finished Make data base on Thu Oct 26 20:37:20 2023
 
 # make[1]: Leaving directory '/home/benison/isp_cteTWLCEO'
+ 
+make: *** [Makefile:93: all] Error 2
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -2852,7 +2860,7 @@ def/user_project_wrapper.def:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Oct 22 17:40:30 2023
+# Make data base, printed on Thu Oct 26 20:37:20 2023
 
 # Variables
 
@@ -2961,7 +2969,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 30236
+VSCODE_PID = 61477
 # makefile (from 'Makefile', line 118)
 dv_patterns = $(shell cd verilog/dv && find * -maxdepth 0 -type d)
 # environment
@@ -3023,9 +3031,6 @@ TARGET_PATH = $(shell pwd)
 # makefile (from 'Makefile', line 45)
 OPENLANE_TAG = 2023.07.19
 # environment
- 
-make: *** [Makefile:93: all] Error 2
-
 INVOCATION_ID = bac011c5a71e42d6bf6890459f07901b
 # environment
 USERNAME = benison
@@ -3088,7 +3093,7 @@ MANAGERPID = 1745
 # environment
 LC_MEASUREMENT = lzh_TW
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 30236
+GIO_LAUNCHED_DESKTOP_FILE_PID = 61477
 # environment
 _ = /usr/share/code/code
 # environment
@@ -3127,6 +3132,7 @@ IM_CONFIG_PHASE = 1
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
+ 
 # default
 SUFFIXES := 
 # makefile (from 'Makefile', line 126)
@@ -3308,7 +3314,6 @@ Makefile:
 user_project_wrapper:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
- 
 #  Implicit/static pattern stem: 'user_project_wrapper'
 #  File does not exist.
 #  File has not been updated.
@@ -3410,6 +3415,7 @@ caravel-sta: env/spef-mapping.tcl
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 390):
+ 
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-typ -j3
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-fast -j3
 	@$(MAKE) -C $(TIMING_ROOT) -f $(TIMING_ROOT)/timing.mk caravel-timing-slow -j3
@@ -3587,7 +3593,6 @@ check_dependencies:
 		mkdir $(PWD)/dependencies; \
 	fi
 
- 
 update_caravel: check-caravel
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -3709,6 +3714,7 @@ install:
 	fi
 	echo "Installing $(CARAVEL_NAME).."
 	git clone -b $(CARAVEL_TAG) $(CARAVEL_REPO) $(CARAVEL_ROOT) --depth=1
+ 
 
 asic:
 #  Phony target (prerequisite of .PHONY).
@@ -3899,9 +3905,6 @@ run-precheck: check-pdk check-precheck
 # strcache performance: lookups = 341 / hit rate = 68%
 # hash-table stats:
 # Load=106/8192=1%, Rehash=0, Collisions=6/341=2%
-# Finished Make data base on Sun Oct 22 17:40:30 2023
+# Finished Make data base on Thu Oct 26 20:37:20 2023
 
  
-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-'make.exe' ���O�����Υ~���R�O�B�i���檺�{���Χ妸�ɡC
-

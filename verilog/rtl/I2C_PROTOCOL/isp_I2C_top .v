@@ -12,12 +12,13 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 `timescale 1ns / 1ps
 //`include "sky130_sram_2kbyte_1rw1r_32x512_8.v"
 
-module peripheral_top(
+module isp_I2C_top
+(
 
 	input         	wb_clk_i,
 	input        	wb_rst_i,
 	input         	wbs_stb_i,
-	input        	wbs_cyc_i,
+	input        	wbs_cyc_i,-[0]
 	input        	wbs_we_i,
 	input [3:0]  	wbs_sel_i,
 	input [31:0]  	wbs_dat_i,
@@ -36,52 +37,50 @@ module peripheral_top(
     	output [1:0]  	pwm_o,
     	
 	// i2c ports
-	input  	sda_i,
-	input  	scl_i,
+	   input  	sda_i,
+	   input  	scl_i,
     
-	output 	sda_o,
-	output	scl_o,
+	   output 	sda_o,
+	   output	scl_o,
     
-	output 	sda_t,
-	output 	scl_t,
+	   output 	sda_t,
+	   output 	scl_t,
 	
          
-        // direction signal for ports
+   // direction signal for ports
  
     	output   	scl_dir,
     	output    	sda_dir,
     
     	output  [1:0]  pwm_dir,
         
- 
-        
-        // jtag ports
-   output        	TMS, 
-  	input       	TDI,
-  	output      	TCK,
-  	output        	TDO,
+   // jtag ports
+      output        	TMS, 
+  	   input       	TDI,
+  	   output      	TCK,
+  	   output        	TDO,
   	
-  	output      	jtag_mux,      // 0 is gpio else its jtag
+  	   output      	jtag_mux,      // 0 is gpio else its jtag
            
     );
  
  /*
- assign q_io0_o = 0;
- assign q_io1_o = 0;
- assign q_io2_o = 0;
- assign q_io3_o = 0;
- assign q_io0_t = 0;
- assign q_io1_t = 0;
- assign q_io2_t = 0;
- assign q_io3_t = 0;
- assign q_spi_clk_o =0;
- assign q_spi_ssel_o = 0;
- assign lrclk =0;
- assign bclk= 0;
- assign audo= 0;
- assign TMS=0;
- assign TDO=0;
- assign TCK=0;
+   assign q_io0_o = 0;
+   assign q_io1_o = 0;
+   assign q_io2_o = 0;
+   assign q_io3_o = 0;
+   assign q_io0_t = 0;
+   assign q_io1_t = 0;
+   assign q_io2_t = 0;
+   assign q_io3_t = 0;
+   assign q_spi_clk_o =0;
+   assign q_spi_ssel_o = 0;
+   assign lrclk =0;
+   assign bclk= 0;
+   assign audo= 0;
+   assign TMS=0;
+   assign TDO=0;
+   assign TCK=0;
  
  */
  
@@ -96,8 +95,8 @@ assign rst = wb_rst_i;
  
 wire rst_n;
 
-
-
+// add on OCT-27-2023
+assign rst_n = wb_rst_i;
 
 //i2c
 wire [31:0]   i2c_apb_addr  ;
@@ -150,19 +149,6 @@ wire [31:0]   dir_apb_rdata ;
 wire [3:0]    dir_apb_pstb  ;
 
 
-wire   [31:0]  qspi_apb_addr  ;  
-wire           qspi_apb_sel   ;  
-wire           qspi_apb_write ;  
-wire           qspi_apb_ena   ;  
-wire   [31:0]  qspi_apb_wdata ;  
-wire   [3:0]   qspi_apb_pstb  ;  
-wire   [31:0]  qspi_apb_rdata ;
-
-
-
-
-
-
 
 // jtag controller
 wire   [31:0]  jtag_apb_addr  ;  
@@ -174,24 +160,6 @@ wire   [3:0]   jtag_apb_pstb  ;
 wire   [31:0]  jtag_apb_rdata ;
 
 
-
-
-
-
-
-
-//memory control 
-/*
-wire [31:0]   memo_apb_addr  ;
-wire          memo_apb_sel   ;
-wire          memo_apb_write ;
-wire          memo_apb_ena   ;
-wire [31:0]   memo_apb_wdata ;
-wire [31:0]   memo_apb_rdata ;
-wire [3:0]    memo_apb_pstb  ;
-*/
-
-
 wire   [31:0]  peripheral_apb_addr  ;  
 wire           peripheral_apb_sel   ;  
 wire           peripheral_apb_write ;  
@@ -199,10 +167,6 @@ wire           peripheral_apb_ena   ;
 wire   [31:0]  peripheral_apb_wdata ;  
 wire   [3:0]   peripheral_apb_pstb  ;  
 wire   [31:0]  peripheral_apb_rdata ;
-
-
-
-
 
  
  assign i2c_apb_rdata = {i2crdata,i2crdata,i2crdata,i2crdata};
