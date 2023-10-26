@@ -68,6 +68,9 @@ module ispCte_top
 					data_reg <= 0;
 				// read flash data
 				// check I2c status
+				// module peripheral_top i2c_top
+
+				
 				// module isp_top
 				// module mipi_csi_16_nx
 				// module DAC_cabin_out_data

@@ -729,6 +729,7 @@ wishbone2apb  u_wishbone2apb (
  .m7_apb_rdata  (i2s_apb_rdata),
  .m7_apb_pstb   (i2s_apb_pstb ),
  .m7_apb_rready (1'b1),
+
  //i2s_apb_rdata
                 
  .m8_apb_addr   (dir_apb_addr ),
@@ -760,8 +761,7 @@ wishbone2apb  u_wishbone2apb (
  .m10_apb_rready (1'b1)
  //qspi_apb_rdata
  
- 
- 
+
  );
  
  
