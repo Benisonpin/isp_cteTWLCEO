@@ -68,10 +68,34 @@ module ispCte_top
 					data_reg <= 0;
 				// read flash data
 				// check I2c status
-				// module peripheral_top i2c_top
-
-				
+				isp_I2C_top i2c_status(
+					.wb_clk_i(wb_clk_i),
+					.wb_rst_i(wb_rst_i),
+					.wbs_stb_i(wbs_stb_i),
+					.wbs_cyc_i(wbs_cyc_i),
+					.wbs_we_i(wbs_we_i),
+					.wbs_sel_i(wbs_sel_i),
+					.wbs_dat_i(wbs_dat_i),
+					.wbs_adr_i(wbs_adr_i),
+					.wbs_ack_o(wbs_ack_o),
+					.wbs_dat_o(wbs_dat_o),
+				)
+			
+				if (wbs_ack_o) begin
+					mipi_csi_16_nx cam_enable
+					(.reset_in(rst_n),
+					 .mipi_clk_p_in(clk_p),
+					 .mipi_clk_n_in(clk_n),
+					 .mipi_data_p_in(data_p),
+					 .mipi_data_n_in(data_n),
+					 .dummy_out(wbs_dat_i),
+					 .pclk_o(pclk_o),
+					 .data_o(data_o),
+					 .fsync_o(fsync_o),
+					 .lsync_o(lsyn_o)
+					 )
 				// module isp_top
+				isp_top isp_start
 				// module mipi_csi_16_nx
 				// module DAC_cabin_out_data
 
