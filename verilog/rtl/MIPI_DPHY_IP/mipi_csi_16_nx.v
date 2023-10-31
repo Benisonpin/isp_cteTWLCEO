@@ -27,12 +27,13 @@ module mipi_csi_16_nx(	reset_in,
 						mipi_clk_n_in1,
 						mipi_data_p_in1,
 						mipi_data_n_in1,
-						dummy_out,
-
+						// dummy_out,
+						mipi_data_raw_hw, 
+						
 						pclk_o,  //data output on pos edge , should be latching into receiver on negedge
 						data_o,
 						fsync_o, //active high 
-						lsync_o, //active high
+						lsync_o, //active high 
 						
 						//these pins may or many not be needed depeding on hardware config
 						cam_ctrl_in, //control camera control input from host
