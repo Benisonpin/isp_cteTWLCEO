@@ -4187,7 +4187,7 @@ module csi_dphy_ipgen_lscc_mipi_dphy #
                         // Soft TX PLL Parameters
                         /// Clock and Reset
                         .sync_clk_i(sync_clk_i), 
-                            .sync_rst_i(sync_rst_i), 
+                        .sync_rst_i(sync_rst_i), 
                             /// LMMI
                         .lmmi_clk_i(lmmi_clk_i), 
                             .lmmi_resetn_i(lmmi_resetn_i), 
