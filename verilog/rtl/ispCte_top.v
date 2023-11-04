@@ -193,7 +193,11 @@ module ispCte_top
 )
 
 				// module DAC_cabin_out_data
+			ntsc_composite_top_de2 DAC_cabin_out
+			(
 
+				
+			)
 				end
 				else begin
 			href_reg <= in_href;
