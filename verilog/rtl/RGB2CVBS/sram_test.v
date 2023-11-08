@@ -115,6 +115,7 @@ module sram_test
 // OUTPUT LOGIC ////////////////////////////////////////////////////////////////
 
     // SRAM control and bus output
+    //if men = dev_en , mem = dev_mem.
     assign mem = (dev_en)  ? dev_mem :
                  (abus_en) ? abus_mem :
                              dbus_mem;

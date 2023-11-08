@@ -45,7 +45,8 @@ module mipi_csi_16_nx(	reset_in,
 parameter MIPI_LANES = 2;			//number of mipi lanes with camera. Only 2 or 4
 parameter MIPI_GEAR = 8;			//deserializer gearing ratio. Only 8 or 16 
 parameter MIPI_PIXEL_PER_CLOCK = 2; // number of pixels pipeline process in one clock cycle. With 2 Lanes and Gear 8 only 2 or 4 with gear 16 only 4 , With 4 Lanes only 4 or 8 
-parameter MAX_PIXEL_WIDTH = 12;   	//max pixel width , 14bit (RAW14) , IMX219 has 10bit while IMX477 has 12bit and IMX294 has 14bit
+parameter MAX_PIXEL_WIDTH = 10   ;  //max pixel width ,  OV5693 has 10bit(RAW10)
+//parameter MAX_PIXEL_WIDTH = 12;   	//max pixel width , 14bit (RAW14) , IMX219 has 10bit while IMX477 has 12bit and IMX294 has 14bit
 parameter FRAME_DETECT = 1;		//if 1 MIPI start frame packet will be detected and used as frame sync rather than mipi_clk_lp , used for sensor whoes clock does not go into lp while frame sync is inactive
 
 //this should never be active unless testing 

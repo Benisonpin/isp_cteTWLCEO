@@ -3,7 +3,7 @@
 // Author:          Ryan Clarke
 // 
 // Create Date:     06/27/2017 
-// Module Name:     ntsc_test
+// Module Name:     rgb2ntsc
 // Target Devices:  Mojo V3 (Spartan-6)
 //
 // Description:     NTSC Shield Video Test
@@ -20,7 +20,7 @@
 //
 ////////////////////////////////////////////////////////////////////////////////
 
-module ntsc_test
+module rgb2ntsc
     (
     input wire clk,
     

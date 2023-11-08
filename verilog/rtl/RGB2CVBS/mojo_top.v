@@ -31,7 +31,7 @@
 //
 // Tri-States:      dq          - SRAM data
 //
-// Dependencies:    ntsc, ntsc_test, sram_ctrl, sram_test
+// Dependencies:    ntsc, rgb2ntsc, sram_ctrl, sram_test
 //
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -99,7 +99,7 @@ module mojo_top
     	.vsync(vsync)
         );
     
-    ntsc_test ntsc_test_unit
+    rgb2ntsc rgb2ntsc_unit
         (
         .clk(clk),
         .x(x),

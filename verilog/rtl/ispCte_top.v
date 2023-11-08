@@ -11,7 +11,7 @@ module ispCte_top
 	parameter BITS = 8,
 	parameter WIDTH = 1280,
 	parameter HEIGHT = 960,
-	parameter BAYER = 0, //0:RGGB 1:GRBG 2:GBRG 3:BGGR
+	parameter BAYER = 2, //0:RGGB 1:GRBG 2:GBRG 3:BGGR
 
 )
 (
@@ -168,30 +168,48 @@ module ispCte_top
 
 				.stat_ae_rect_x(stat_ae_rect_x[15:0]) , 
 				.stat_ae_rect_y (stat_ae_rect_y[15:0]), 
-				.stat_ae_rect_w(stat_ae_rect_w[15:0]) stat_ae_rect_x, stat_ae_rect_y, , stat_ae_rect_h,
-				.stat_ae_rect_h(stat_ae_rect_h[15:0]) stat_ae_rect_x, stat_ae_rect_y, stat_ae_rect_w, ,
+				.stat_ae_rect_w(stat_ae_rect_w[15:0]) ,
+				.stat_ae_rect_h(stat_ae_rect_h[15:0])  ,
 	 			.stat_ae_done(stat_ae_done),
 				.stat_ae_pix_cnt(stat_ae_pix_cnt[STAT_OUT_BITS-1:0] ), 
 	 			.stat_ae_sum(stat_ae_sum[STAT_OUT_BITS-1:0]) , 
 
-	 		.stat_ae_hist_clk(stat_ae_hist_clk),
-	 		.stat_ae_hist_out(stat_ae_hist_out),
-	 		.stat_ae_hist_addr(stat_ae_hist_addr[STAT_HIST_BITS+1:0]) , //R,Gr,Gb,B
-	 		.stat_ae_hist_data(stat_ae_hist_data[STAT_OUT_BITS-1:0]) ,
+	 			.stat_ae_hist_clk(stat_ae_hist_clk),
+	 			.stat_ae_hist_out(stat_ae_hist_out),
+	 			.stat_ae_hist_addr(stat_ae_hist_addr[STAT_HIST_BITS+1:0]) , //R,Gr,Gb,B
+	 			.stat_ae_hist_data(stat_ae_hist_data[STAT_OUT_BITS-1:0]) ,
 
-	 		.stat_awb_min(stat_awb_min[BITS-1:0]) , 
-			.stat_awb_max(stat_awb_max[BITS-1:0]) , 
-	 		.stat_awb_done(stat_awb_done),
-	 		.stat_awb_pix_cnt(stat_awb_pix_cnt[STAT_OUT_BITS-1:0]) ,
-	 		.stat_awb_sum_r(stat_awb_sum_r[STAT_OUT_BITS-1:0]) 
-	 		.stat_awb_sum_g(stat_awb_sum_g[STAT_OUT_BITS-1:0]) 
-	 		.stat_awb_sum_b(stat_awb_sum_b[STAT_OUT_BITS-1:0]) 
-	 		.stat_awb_hist_clk(stat_awb_hist_clk),
-	 		.stat_awb_hist_out(stat_awb_hist_out),
-	 		.stat_awb_hist_addr[STAT_HIST_BITS+1:0] , //R,G,B
-			.stat_awb_hist_data[STAT_OUT_BITS-1:0] 
+	 			.stat_awb_min(stat_awb_min[BITS-1:0]) , 
+				.stat_awb_max(stat_awb_max[BITS-1:0]) , 
+	 			.stat_awb_done(stat_awb_done),
+	 			.stat_awb_pix_cnt(stat_awb_pix_cnt[STAT_OUT_BITS-1:0]) ,
+	 			.stat_awb_sum_r(stat_awb_sum_r[STAT_OUT_BITS-1:0]) 
+	 			.stat_awb_sum_g(stat_awb_sum_g[STAT_OUT_BITS-1:0]) 
+	 			.stat_awb_sum_b(stat_awb_sum_b[STAT_OUT_BITS-1:0]) 
+	 			.stat_awb_hist_clk(stat_awb_hist_clk),
+	 			.stat_awb_hist_out(stat_awb_hist_out),
+	 			.stat_awb_hist_addr[STAT_HIST_BITS+1:0] , //R,G,B
+				.stat_awb_hist_data[STAT_OUT_BITS-1:0] 
 )
-
+			// save to SDRAM {ccm_r_o,ccm_g_o,ccm_b_o}, SAVE R,G,B DATA TO SDRAM MEM
+		//assign reg rgb_en = 1'b0
+		//assign reg data_wr = 1'b0
+			// rgb data whrite to fifo buffer
+		fifo_mem fifo_rgb_wr
+    	(
+    	.data_out(video_active),
+    	.fifo_full(fifo_full), 
+    	.fifo_empty(fifo_empty), 
+    	.fifo_threshold(fifo_threshold), 
+    	.fifo_overflow(fifo_threshold), 
+    	.fifo_underflow(fifo_underflow),
+    	.clk(pclk), 
+    	.rst_n(rst_n), 
+    	.wr(wr), 
+    	.rd(rd), 
+    	.data_in(rgb888),
+		);  
+			
 				// module DAC_cabin_out_data
 			ntsc_composite_top_de2 DAC_cabin_out
 			(
