@@ -60,10 +60,12 @@ module ntsc_sync
 // CONSTANTS ///////////////////////////////////////////////////////////////////
    
     // horizontal sync sample counts (12.5 MHz)
+    // 1/12.5 MHZ =0.08 us.
+    // 19 x 0.08 us = 1.52 us
     localparam HS_FRONT_PORCH  = 10'd19,  // Front Porch - 1.52 us
-               HS_SYNC_TIP     = 10'd59,  // Horiz. Sync Tip - 4.72 us
-               HS_HALF_LINE    = 10'd397, // Half Line - 31.76 us
-               HS_FULL_LINE    = 10'd794, // Full Line - 63.52 us
+               HS_SYNC_TIP     = 10'd59,  // Horiz. Sync Tip - 4.72 us, =59x 0.08 us
+               HS_HALF_LINE    = 10'd397, // Half Line - 31.76 us = 397x0.08 us
+               HS_FULL_LINE    = 10'd794, // Full Line - 63.52 us = 794x0.08 us
                HS_EQUAL_PULSE  = 10'd29,  // Pre/Post-Equalizing Pulse - 2.32 us
                HS_SERRATION    = 10'd59;  // Vertical Serration - 4.72 us
     
