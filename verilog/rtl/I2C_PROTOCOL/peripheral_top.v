@@ -23,7 +23,7 @@ module peripheral_top(
 	input [31:0]  	wbs_dat_i,
 	input [31:0] 	wbs_adr_i,
 
-	output   	wbs_ack_o,
+	output   	   wbs_ack_o,
 	output [31:0]	wbs_dat_o,
 
 	//uart 
@@ -729,7 +729,6 @@ wishbone2apb  u_wishbone2apb (
  .m7_apb_rdata  (i2s_apb_rdata),
  .m7_apb_pstb   (i2s_apb_pstb ),
  .m7_apb_rready (1'b1),
-
  //i2s_apb_rdata
                 
  .m8_apb_addr   (dir_apb_addr ),
@@ -761,7 +760,8 @@ wishbone2apb  u_wishbone2apb (
  .m10_apb_rready (1'b1)
  //qspi_apb_rdata
  
-
+ 
+ 
  );
  
  

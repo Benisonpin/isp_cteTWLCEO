@@ -68,7 +68,8 @@ module ispCte_top
 					data_reg <= 0;
 				// read flash data
 				// check I2c status
-				isp_I2C_top i2c_status(
+				isp_I2C_top i2c_status
+				(
 					.wb_clk_i(wb_clk_i),
 					.wb_rst_i(wb_rst_i),
 					.wbs_stb_i(wbs_stb_i),
@@ -92,7 +93,11 @@ module ispCte_top
 					 .pclk_o(pclk_o),
 					 .data_o(data_o),
 					 .fsync_o(fsync_o),
-					 .lsync_o(lsyn_o)
+					 .lsync_o(lsyn_o),
+					 .cam_ctrl_in(cam_ctrl_in),
+					 .cam_pwr_en_o(cam_pwr_en_o),
+					 .cam_reset_o(cam_reset_o),
+					 .cam_xmaster_o(cam_xmaster_o),
 					 )
 				assign wbs_dat_i = 	 mipi_data_raw_hw
 				// module isp_top
