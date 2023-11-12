@@ -72,7 +72,8 @@ output pclk_o;
 output [31:0]data_o;
 output fsync_o;
 output lsync_o;
-output dummy_out;
+// output dummy_out;  disable on NOV/12
+output mipi_data_raw;
 
 wire osc_clk;
 
@@ -100,13 +101,15 @@ wire [31 :0]mipi_data_raw;
 wire [((MIPI_LANES * MIPI_GEAR) - 1) :0]byte_aligned;
 wire [((MIPI_LANES * MIPI_GEAR) - 1) :0]lane_aligned;
 wire [((MIPI_LANES * MIPI_GEAR) - 1) :0]decoded_data;
+// 2* 8 -1 = [15:0], 16 BITS,byte_aligned,lane_aligned,decoded_data
 wire [2:0]packet_type;
 wire [15:0]packet_length;
 wire [((MAX_PIXEL_WIDTH * MIPI_PIXEL_PER_CLOCK	  ) - 1 ):0]unpacked_data;
 wire [((MAX_PIXEL_WIDTH * MIPI_PIXEL_PER_CLOCK * 3) - 1 ):0]rgb_data;
 wire [((MAX_PIXEL_WIDTH * MIPI_PIXEL_PER_CLOCK * 3) - 1 ):0]rgb_corrected;
 wire [((MIPI_PIXEL_PER_CLOCK * 8 * 2 	          ) - 1 ):0]yuv_data;
-
+// 10 bits * 2 -1 = 19, [19:0], 20 bits,unpacked_data, 
+// 10 bits * 2 * 3 -1 = [59:0], 60 bits , rgb_data
 wire line_reset;
 wire frame_sync;
 wire [1:0] sync_pulse;
@@ -204,7 +207,7 @@ generate  //if hardware mipi lane n does not match to FPGA PHY lane n then adjus
 	end
 endgenerate */
 
-assign mipi_data_raw = mipi_data_raw_hw;
+//assign mipi_data_raw = mipi_data_raw_hw;
 
 
 camera_controller camera_controller_ins0(	.sclk_i(osc_clk),

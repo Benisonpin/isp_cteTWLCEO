@@ -80,7 +80,7 @@ module user_project_wrapper #(
     inout [`MPRJ_IO_PADS_2+1:`MPRJ_IO_PADS_2+1] analog_io, 
 
     //(CIS:PICLK,HSYNC,VSYNC,XCLK,RST)  
-    input  [`MPRJ_IO_PADS-1:MPRJ_IO_PADS-5] io_in, 
+    input  [`MPRJ_IO_PADS-1:MPRJ_IO_PADS-1] io_in, 
 
     output [`MPRJ_IO_PADS:MPRJ_IO_PADS-1] io_out
    output [`MPRJ_IO_PADS-1:0] io_oeb,

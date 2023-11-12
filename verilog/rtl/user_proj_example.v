@@ -354,7 +354,9 @@ module user_proj_example #(
 		.mipi_clk_n_in1(io_in[15:15]),//(MIPI_clk_P,),
 		.mipi_data_p_in1(io_in[12:12]),//(,MIPI_D1_N),
 		.mipi_data_n_in1(io_in[13:13]),//(MIPI_D1_P),
-		.dummy_out(rdata),
+		//.dummy_out(rdata),
+    .mipi_data_raw(rdata), 
+    //added on Nov/12
 
 		.pclk_o(pclk_o),  //data output on pos edge , should be latching into receiver on negedge
 		.data_o(data_o),
