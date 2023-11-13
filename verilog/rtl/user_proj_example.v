@@ -72,6 +72,8 @@ module user_proj_example #(
     output [38-1:0] io_out,
     output [38-1:0] io_oeb,
  
+    inout [37:0] analog_io,
+
     input   user_clock2,
     // IRQ
     output [2:0] irq
@@ -146,6 +148,19 @@ module user_proj_example #(
    wire w_led_dir;
    wire w_i2s_dir;
    
+  //(MIPI_clk_P,MIPI_clk_N),(MIPI_D1_P,MIPI_D1_N),(MIPI_D0_P,MIPI_D0_N),
+    .analog_io_in ({analog_io_in[15:14],analog_io_in[13:12],analog_io_in[11:10]}),
+    
+       //(DAC_outN),disable on OCT-12-2023
+    //.analog_io_in ({analog_io_in[17:17]}), 
+    
+       //(DAC_cabin),
+    .analog_io_in ({analog_io_in[18:18]}),
+
+        //AD1 convert analog input 
+        //DISABLE, AD0 conver analog input), OCT-17-2023
+    .analog_io_in ({analog_io_in[19:19]}),
+
    wire ext_aud_mclk;
       // to replace by Internal spi master,disable on oct-17-2023
    //wire jtag_mux;
