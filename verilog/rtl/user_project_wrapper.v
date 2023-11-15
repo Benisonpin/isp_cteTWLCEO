@@ -64,15 +64,13 @@ module user_project_wrapper #(
        // Internal UART0,SPDX
     input  [`MPRJ_IO_PADS-13:1] io_in, 
 
-    // sensor CIS_data input (d9-d0)   , io_in [36:27]
-    input  [`MPRJ_IO_PADS-1:28] io_in, 
-    
-    // analog_io_in for MIPI_clk_N,MIPI_clk_P,MIPI_D0_N,MIPI_D0_P,MIPI_D1_N,MIPI_D1_P
-    // analog_io_in[15:10]
+        // sensor CIS_data input (d9-d0)   , io_in [36:27]
+    input  [`MPRJ_IO_PADS-1:28] io_in,
+        // analog_io_in for MIPI_clk_N,MIPI_clk_P,MIPI_D0_N,MIPI_D0_P,MIPI_D1_N,MIPI_D1_P
+        // analog_io_in[15:10]
     inout  [`MPRJ_IO_PADS_1-3:11] analog_io,
-
-    // analog_io_out for DAC_cabin,DAC_outN 
-    // analog_io_iout[18:18]
+        // analog_io_out for DAC_cabin,DAC_outN 
+        // analog_io_iout[18:18]
     inout [`MPRJ_IO_PADS_1:`MPRJ_IO_PADS_1] analog_io,
 
        // analog_io_out for  AD1 
@@ -83,7 +81,7 @@ module user_project_wrapper #(
     input  [`MPRJ_IO_PADS-1:MPRJ_IO_PADS-1] io_in, 
 
     output [`MPRJ_IO_PADS:MPRJ_IO_PADS-1] io_out
-   output [`MPRJ_IO_PADS-1:0] io_oeb,
+    output [`MPRJ_IO_PADS-1:0] io_oeb,
 
     // Analog (direct connection to GPIO pad---use with caution)
     // Note that analog I/O is not available on the 7 lowest-numbered
