@@ -74,6 +74,16 @@ module user_proj_example #(
  
     inout [37:0] analog_io,
 
+ 
+    // IO Pads (for ISP Project io)
+    output {mprj_io[37:37]} io_out,  //(PWM_1) 
+    inout  {mprj_io[36:20]} io_out ,  //(CIS_data: D9 - D0) , //(CIS:PICLK,HSYNC,VSYNC,XCLK,RST),
+    input  {mprj_io[19:19]} analog_io_in , //AD1 convert analog input 
+    output {mprj_io[18:18]} analog_io_out, //(DAC_cabin)    
+    input  {mprj_io[15:10]} analog_io_in , //(MIPI_clk_P,MIPI_clk_N),(MIPI_D1_P,MIPI_D1_N),(MIPI_D0_P,MIPI_D0_N)
+    inout  {mprj_io[5:4]} uart_rx_tx,  //(UART0 TX,RX),    
+    inout  {mprj_io[3:0]} spi_rx_tx, //(SCK,CSB,SDI,SDO,)    
+     
     input   user_clock2,
     // IRQ
     output [2:0] irq
