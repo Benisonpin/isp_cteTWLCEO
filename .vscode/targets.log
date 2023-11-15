@@ -12,7 +12,7 @@ make[1]: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Nov 14 22:04:18 2023
+# Make data base, printed on Wed Nov 15 18:19:41 2023
 
 # Variables
 
@@ -131,7 +131,7 @@ MAKEFILE_LIST := /home/benison/isp_cteTWLCEO/caravel/Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2810
+VSCODE_PID = 24111
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -278,7 +278,7 @@ MANAGERPID = 1789
 # environment
 LC_MEASUREMENT = lzh_TW
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2810
+GIO_LAUNCHED_DESKTOP_FILE_PID = 24111
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 43)
 LARGE_FILES_GZ_SPLIT := ./gds/user_proj_example.gds.gz.00.split ./gds/user_project_wrapper.gds.gz.00.split ./caravel/def/caravan_core.def.gz.00.split ./caravel/def/caravel_core.def.gz.00.split ./caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split ./caravel/gds/user_project_wrapper_empty.gds.gz.00.split ./verilog/rtl/Skywater_130nm/mag/mgmt_core.mag.gz.00.split ./verilog/rtl/Skywater_130nm/gds/chip_io.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/DFFRAM.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/caravel.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/storage.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_id_programming.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_core.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_proj_example.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/caravel.old.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/simple_por.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds.gz.00.split ./openlane_master/dist/openlane-2.0.0b15.tar.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM256.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
 # environment
@@ -1655,6 +1655,7 @@ verilog/rtl/:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 lvs-maglef-user_project_wrapper: mag/user_project_wrapper.mag verilog/gl/user_project_wrapper.v
 #  Implicit rule search has not been done.
@@ -1683,7 +1684,6 @@ lvs-maglef-user_project_wrapper: mag/user_project_wrapper.mag verilog/gl/user_pr
 	mv ./mag/$*.spice ./spi/lvs
 	rm ./maglef/*.ext
 	mv -f ./mag/extract_$*.tcl ./maglef/tmp
- 
 	mv -f ./mag/extract_$*.log ./maglef/tmp
 	####
 	mkdir -p ./spi/lvs/tmp
@@ -2052,6 +2052,7 @@ rcx-asic: def/asic.def
 
 mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split: mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz
 #  Implicit rule search has not been done.
+ 
 #  Implicit/static pattern stem: 'mgmt_core_wrapper/mag/mgmt_core_wrapper.mag'
 #  Modification time never checked.
 #  File has not been updated.
@@ -2071,7 +2072,6 @@ lvs-asic: mag/asic.mag verilog/gl/asic.v
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 316):
 	echo "Extracting $*"
 	mkdir -p ./mag/tmp
- 
 	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
 		addpath $(CARAVEL_ROOT)/mag/primitives;\
 		addpath $(MCW_ROOT)/mag;\
@@ -2410,6 +2410,7 @@ skywater-pdk:
 		git submodule update --init libraries/$(IO_LIBRARY)/latest && \
 		git submodule update --init libraries/$(SPECIAL_VOLTAGE_LIBRARY)/latest && \
 		git submodule update --init libraries/$(PRIMITIVES_LIBRARY)/latest && \
+ 
 		$(MAKE) timing
 
 verilog/rtl/Skywater_130nm/gds/digital_pll.gds: verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz
@@ -2425,7 +2426,6 @@ open-pdks:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
- 
 #  File has not been updated.
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1269):
 	if [ -d "$(PDK_ROOT)/open_pdks" ]; then \
@@ -2698,6 +2698,7 @@ caravel_timing_typ: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-m
 		read_spef -path gpio_defaults_block_37 ./spef/gpio_defaults_block.spef;\
 		read_spef ./spef/caravel.spef;\
 		read_sdc -echo ./sdc/caravel.sdc;\
+ 
 		report_checks -path_delay min -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
 		report_checks -path_delay max -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
 		report_worst_slack -max ;\
@@ -2915,7 +2916,6 @@ verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds: veril
 	@$(UNCOMPRESS) $<
 	@echo "$< -> $@"
 
- 
 verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds: verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds.gz
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: 'verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds'
@@ -3317,6 +3317,7 @@ caravel_timing_fast: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-
 		report_checks -to mprj/wb_rst_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_cyc_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_stb_i -unconstrained -group_count 1;\
+ 
 		report_checks -to mprj/wbs_we_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_sel_i[*] -unconstrained -group_count 4;\
 		report_checks -to mprj/wbs_adr_i[*] -unconstrained -group_count 32;\
@@ -3338,7 +3339,6 @@ generate_fill: check-env check-uid check-project uncompress
 	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __generate_fill
 	@echo "Generate fill completed." 2>&1 | tee -a ./signoff/build/generate_fill.out
 
- 
 rcx-user_project_wrapper: def/user_project_wrapper.def
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: 'user_project_wrapper'
@@ -3581,9 +3581,12 @@ def/user_project_wrapper.def:
 # strcache performance: lookups = 771 / hit rate = 69%
 # hash-table stats:
 # Load=238/8192=3%, Rehash=0, Collisions=7/771=1%
-# Finished Make data base on Tue Nov 14 22:04:24 2023
+# Finished Make data base on Wed Nov 15 18:19:42 2023
 
 # make[1]: Leaving directory '/home/benison/isp_cteTWLCEO'
+ 
+make: *** [Makefile:93: all] Error 2
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -3591,7 +3594,7 @@ def/user_project_wrapper.def:
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Nov 14 22:04:24 2023
+# Make data base, printed on Wed Nov 15 18:19:42 2023
 
 # Variables
 
@@ -3702,7 +3705,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2810
+VSCODE_PID = 24111
 # makefile (from 'Makefile', line 118)
 dv_patterns = $(shell cd verilog/dv && find * -maxdepth 0 -type d)
 # environment
@@ -3713,9 +3716,6 @@ XDG_SESSION_TYPE = wayland
 SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1926,unix/benison-VirtualBox:/tmp/.ICE-unix/1926
 # automatic
 *F = $(notdir $*)
- 
-make: *** [Makefile:93: all] Error 2
-
 # makefile (from 'Makefile', line 51)
 CARAVEL_TAG := mpw-9d
 # environment
@@ -3833,7 +3833,7 @@ MANAGERPID = 1789
 # environment
 LC_MEASUREMENT = lzh_TW
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2810
+GIO_LAUNCHED_DESKTOP_FILE_PID = 24111
 # environment
 _ = /usr/share/code/code
 # environment
@@ -3865,6 +3865,7 @@ PRECHECK_ROOT = ${HOME}/mpw_precheck
 # makefile (from 'Makefile', line 119)
 dv-targets-rtl = $(dv_patterns:%=verify-%-rtl)
 # makefile (from 'Makefile', line 124)
+ 
 verify_command = "source ~/.bashrc && cd ${TARGET_PATH}/verilog/dv/$* && export SIM=${SIM} && make"
 # environment
 IM_CONFIG_PHASE = 1
@@ -3998,7 +3999,6 @@ clean-user_proj_example:
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: 'user_proj_example'
 #  File does not exist.
- 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 174):
 	rm -f ./verilog/gl/$*.v
@@ -4148,6 +4148,7 @@ uninstall:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 221):
 	rm -rf $(CARAVEL_ROOT)
+ 
 
 caravel-sta: env/spef-mapping.tcl
 #  Phony target (prerequisite of .PHONY).
@@ -4277,7 +4278,6 @@ all:
 #  Modification time never checked.
 #  File has been updated.
 #  Failed to be updated.
- 
 # automatic
 # @ := all
 # automatic
@@ -4458,6 +4458,7 @@ install:
 asic:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
 #  Implicit/static pattern stem: 'asic'
 #  File does not exist.
 #  File has not been updated.
@@ -4591,7 +4592,6 @@ verify-wb_port-gl: simenv
 	$(docker_run_verify)
 
 /home/benison/isp_cteTWLCEO/dependencies/timing-scripts:
- 
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -4645,6 +4645,6 @@ run-precheck: check-pdk check-precheck
 # strcache performance: lookups = 345 / hit rate = 68%
 # hash-table stats:
 # Load=110/8192=1%, Rehash=0, Collisions=6/345=2%
-# Finished Make data base on Tue Nov 14 22:04:25 2023
+# Finished Make data base on Wed Nov 15 18:19:42 2023
 
  
