@@ -213,30 +213,33 @@ module user_proj_example #(
                     .INP(MIPI_inout(11:11)),
                     .INN(MIPI_inout(10:10)),
                     .VABIASN(VBIASN),
-                    .OUT(MIPI_D0_OUT),
+                    .OUT(MIPI_D1_OUT),
                     )                  
 
-            //MIPI0 Data in
-                mipi_rx_raw10_depacker mipi0_enable
+
+
+           //Module mipi_csi_16_nx
+                mipi_csi_16_nx mipi_enable
 					(
-                    .wb_clk_i(CLK_OUT)
-                    .wbs_stb_i(wbs_stb_i)
-                    .data_i(MIPI_D0_OUT)
-                    .output_valid_o(output_valid_o)
-                    .output_o(mipi_data_raw_hw0)       
+                    .reset_in(rst_n),
+					.mipi_clk_p_in(clk_p),
+					.mipi_clk_n_in(clk_n),
+					.mipi_data_p_in(data_p),
+					.mipi_data_n_in(data_n),
+                    .mipi_clk_p_in1(clk_p1),
+					.mipi_clk_n_in1(clk_n1),
+					.mipi_data_p_in1(data_p1),
+					.mipi_data_n_in1(data_n1),
+					.mipi_data_raw_hw(mipi_data_raw_hw),
+					.pclk_o(pclk_o),
+					.data_o(data_o),
+					.fsync_o(fsync_o),
+					.lsync_o(lsyn_o),
+					.cam_ctrl_in(cam_ctrl_in),
+					.cam_pwr_en_o(cam_pwr_en_o),
+					.cam_reset_o(cam_reset_o),
+					.cam_xmaster_o(cam_xmaster_o),
 					)
-
-            //MIPI1 Data in
-                mipi_rx_raw10_depacker mipi0_enable
-					(
-                    .wb_clk_i(CLK_OUT)
-                    .wbs_stb_i(wbs_stb_i)
-                    .data_i(MIPI_D1_OUT)
-                    .output_valid_o(output_valid_o)
-                    .output_o(mipi_data_raw_hw1)       
-					)
-
-
 				assign wbs_dat_i = 	 mipi_data_raw_hw
 				// module isp_top
 

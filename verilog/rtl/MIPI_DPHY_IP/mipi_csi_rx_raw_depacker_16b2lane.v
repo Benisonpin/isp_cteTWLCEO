@@ -193,7 +193,7 @@ begin
 
 end
 
-always @(posedge clk_i )//or negedge data_valid_reg)
+always @(posedge clk_i )//or (negedge data_valid_reg)
 begin
 
         if (data_valid_reg)

@@ -121,60 +121,64 @@ module user_analog_project_wrapper (
 
 );
 
+/*--------------------------------------*/
+/* User project is instantiated  here   */
+/*--------------------------------------*/
 
-// Instantiate the digital_top
+user_proj_example mprj (
+`ifdef USE_POWER_PINS
 
-digital_top dut (
-    `ifdef USE_POWER_PINS
-	    .DVDD(vccd2),
-	    .AVDD(vccd1),
-	    .DVSS(vssa1),
-	`endif
+    .Vdda1(vdda1),	// User area 1 3.3V supply
+    .vdda2(vdda2),	// User area 2 3.3V supply
+    .vssa1(vssa1),	// User area 1 analog ground
+    .vssa2(vssa2),	// User area 2 analog ground
+    .vccd1(vccd1),	// User area 1 1.8V supply
+    .vccd2(vccd2),	// User area 2 1.8v supply
+    .vssd1(vssd1),	// User area 1 digital ground
+    .vssd2(vssd2),	// User area 2 digital ground
+`endif
 
-    .rst(la_data_in[111]),
-	.rst_prbs(la_data_in[110]), 
-	.inj_error(la_data_in[109]),
+    .wb_clk_i(wb_clk_i),
+    .wb_rst_i(wb_rst_i),
 
-	.ref_clk_ext_p(io_analog[3]),  // high speed pad
-	.ref_clk_ext_n(io_analog[2]),  // high speed pad
-	
-    .CTL_BUF_N(la_data_in[103:108]), //
+    // MGMT SoC Wishbone Slave
 
-	.CTL_BUF_P(wbs_dat_i[97:102]), //
-	
-    .osc_en(la_data_in[96]), // 
-	.aux_osc_en(la_data_in[95]), 
+    .wbs_cyc_i(wbs_cyc_i),
+    .wbs_stb_i(wbs_stb_i),
+    .wbs_we_i(wbs_we_i),
+    .wbs_sel_i(wbs_sel_i),
+    .wbs_adr_i(wbs_adr_i),
+    .wbs_dat_i(wbs_dat_i),
+    .wbs_ack_o(wbs_ack_o),
+    .wbs_dat_o(wbs_dat_o),
 
-	.inj_en(la_data_in[94]), 
-	.fftl_en(la_data_in[93]),
+    // Logic Analyzer
 
-	.con_perb(la_data_in[89:92]),
+    .la_data_in(la_data_in),
+    .la_data_out(la_data_out),
+    .la_oenb (la_oenb),
 
-	.div_ratio_half(la_data_in[83:88]), 
-	.fine_control_avg_window_select(la_data_in[78:82]), 
-	.fine_con_step_size(la_data_in[74:77]), 
-	.manual_control_osc(la_data_in[61:73]), 
+    // IO Pads (for ISP Project io)
+    .io_in ({io_in[37:0]}),
+    .io_out({io_out[37:0]}),
+    .in_oeb ({io_oeb[37:0]}),
+    .analog_io (analog_io),
 
-	.pi1_con(la_data_in[57:60]), 
-	.pi2_con(la_data_in[53:56]), 
-	.pi3_con(la_data_in[49:52]), 
+    .pwm_out(pwm_out[37:37]),
+    .sensor_io_out(sensor_io_out[36:20]),
+    .i2c_in_in(i2c_in_in{26:25}) ,  // {w_sda_i,w_scl_i};
+    .i2c_in_out(i2c_in_out[26:25]),
+    .analog_AD_in(analog_AD_in[19:19]),
+    .NTSC_out(NTSC_out[18]), 
+    .MIPI_inout(MIPI_inout{15:10}),
+    .uart_rx_tx(uart_rx_tx[5:4]),
+    .spi_rx_tx(spi_rx_tx[3:0]),
+    .user_clock2(user_clock2),
+  //  .io_oeb({io_oeb[37:30],io_oeb[7:0]}),
 
-	.pi4_con(la_data_in[116:119]), 
-	.pi5_con(la_data_in[112:115]), 
-
-
-// Checked
-	.test_mux_select(la_data_in[124:127]), 
-	.test_mux_clk_I_select(la_data_in[122:123]), 
-	.test_mux_clk_Q_select(la_data_in[120:121]),
-
-	.dout_p(io_analog[1]), 
-	.dout_n(io_analog[0]), 
-	.test_mux_misc(io_analog[9]), 
-	.test_mux_clk_Q(io_analog[8]), 
-	.test_mux_clk_I(io_analog[7])
-
+    // IRQ
+      // To manage the arbitration for AMI bus among slave axi element.
+    .irq(user_irq) ({user_irq[2:0]}),
 );
-
 
 endmodule	// user_analog_project_wrapper
