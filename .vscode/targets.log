@@ -12,7 +12,7 @@ make[1]: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Nov 15 18:19:41 2023
+# Make data base, printed on Tue Nov 21 17:36:11 2023
 
 # Variables
 
@@ -83,7 +83,7 @@ VSCODE_CODE_CACHE_PATH = /home/benison/.config/Code/CachedData/1a5daa3a0231a0fbb
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.2LBOE2
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.ZINRE2
 # default
 .LOADED := 
 # default
@@ -131,7 +131,7 @@ MAKEFILE_LIST := /home/benison/isp_cteTWLCEO/caravel/Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 24111
+VSCODE_PID = 156590
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -141,7 +141,7 @@ LARGE_FILES_GZ := ./gds/user_proj_example.gds.gz ./gds/user_project_wrapper.gds.
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 38)
 LARGE_FILES := ./gds/user_proj_example.gds ./gds/user_project_wrapper.gds
 # environment
-SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1926,unix/benison-VirtualBox:/tmp/.ICE-unix/1926
+SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1901,unix/benison-VirtualBox:/tmp/.ICE-unix/1901
 # automatic
 *F = $(notdir $*)
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 23)
@@ -203,7 +203,7 @@ OPENLANE_TAG = 2023.07.19
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 92)
 IO_LIBRARY = sky130_fd_io
 # environment
-INVOCATION_ID = 17f190d94f7e418b937476efe46a4077
+INVOCATION_ID = 7461904b89054483b9d0df471c1b293d
 # environment
 USERNAME = benison
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 55)
@@ -231,7 +231,7 @@ DESKTOP_SESSION = ubuntu
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 34)
-ARCHIVES := ./caravel/def/caravan_core.def.gz ./caravel/def/caravel_core.def.gz ./caravel/gds/user_analog_project_wrapper_empty.gds.gz ./caravel/gds/user_project_wrapper_empty.gds.gz ./verilog/rtl/Skywater_130nm/mag/mgmt_core.mag.gz ./verilog/rtl/Skywater_130nm/gds/chip_io.gds.gz ./verilog/rtl/Skywater_130nm/gds/DFFRAM.gds.gz ./verilog/rtl/Skywater_130nm/gds/caravel.gds.gz ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds.gz ./verilog/rtl/Skywater_130nm/gds/storage.gds.gz ./verilog/rtl/Skywater_130nm/gds/user_id_programming.gds.gz ./verilog/rtl/Skywater_130nm/gds/mgmt_core.gds.gz ./verilog/rtl/Skywater_130nm/gds/user_proj_example.gds.gz ./verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds.gz ./verilog/rtl/Skywater_130nm/gds/caravel.old.gds.gz ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds.gz ./verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds.gz ./verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds.gz ./verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds.gz ./verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds.gz ./verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds.gz ./verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds.gz ./verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz ./verilog/rtl/Skywater_130nm/gds/simple_por.gds.gz ./verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds.gz ./openlane_master/dist/openlane-2.0.0b15.tar.gz ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn.gz ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn.gz ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn.gz ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn.gz ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz ./mgmt_core_wrapper/gds/RAM256.gds.gz ./mgmt_core_wrapper/gds/RAM128.gds.gz
+ARCHIVES := ./caravel/def/caravan_core.def.gz ./caravel/def/caravel_core.def.gz ./caravel/gds/user_analog_project_wrapper_empty.gds.gz ./caravel/gds/user_project_wrapper_empty.gds.gz ./verilog/rtl/Skywater_130nm/mag/mgmt_core.mag.gz ./verilog/rtl/Skywater_130nm/gds/chip_io.gds.gz ./verilog/rtl/Skywater_130nm/gds/DFFRAM.gds.gz ./verilog/rtl/Skywater_130nm/gds/caravel.gds.gz ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds.gz ./verilog/rtl/Skywater_130nm/gds/storage.gds.gz ./verilog/rtl/Skywater_130nm/gds/user_id_programming.gds.gz ./verilog/rtl/Skywater_130nm/gds/mgmt_core.gds.gz ./verilog/rtl/Skywater_130nm/gds/user_proj_example.gds.gz ./verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds.gz ./verilog/rtl/Skywater_130nm/gds/caravel.old.gds.gz ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds.gz ./verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds.gz ./verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds.gz ./verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds.gz ./verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds.gz ./verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds.gz ./verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds.gz ./verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz ./verilog/rtl/Skywater_130nm/gds/simple_por.gds.gz ./verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds.gz ./openlane_master/dist/openlane-2.0.0b15.tar.gz ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn.gz ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn.gz ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn.gz ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn.gz ./openlane_master/.git/refs/remotes/origin/support-spef.gz ./openlane_master/.git/logs/refs/remotes/origin/support-spef.gz ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz ./mgmt_core_wrapper/gds/RAM256.gds.gz ./mgmt_core_wrapper/gds/RAM128.gds.gz
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
@@ -245,7 +245,7 @@ DISABLE_LVS = 0
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 100)
 .DEFAULT_GOAL := ship
 # environment
-SYSTEMD_EXEC_PID = 1963
+SYSTEMD_EXEC_PID = 1923
 # environment
 TIMING_ROOT = /home/benison/isp_cteTWLCEO/dependencies/timing-scripts
 # environment
@@ -259,7 +259,7 @@ MCW_REPO := https://github.com/efabless/caravel_mgmt_soc_litex
 # default
 MAKE_VERSION := 4.3
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 35)
-ARCHIVE_SOURCES := ./caravel/def/caravan_core.def ./caravel/def/caravel_core.def ./caravel/gds/user_analog_project_wrapper_empty.gds ./caravel/gds/user_project_wrapper_empty.gds ./verilog/rtl/Skywater_130nm/mag/mgmt_core.mag ./verilog/rtl/Skywater_130nm/gds/chip_io.gds ./verilog/rtl/Skywater_130nm/gds/DFFRAM.gds ./verilog/rtl/Skywater_130nm/gds/caravel.gds ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds ./verilog/rtl/Skywater_130nm/gds/storage.gds ./verilog/rtl/Skywater_130nm/gds/user_id_programming.gds ./verilog/rtl/Skywater_130nm/gds/mgmt_core.gds ./verilog/rtl/Skywater_130nm/gds/user_proj_example.gds ./verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds ./verilog/rtl/Skywater_130nm/gds/caravel.old.gds ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds ./verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds ./verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds ./verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds ./verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds ./verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds ./verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds ./verilog/rtl/Skywater_130nm/gds/digital_pll.gds ./verilog/rtl/Skywater_130nm/gds/simple_por.gds ./verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds ./openlane_master/dist/openlane-2.0.0b15.tar ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds ./mgmt_core_wrapper/gds/RAM256.gds ./mgmt_core_wrapper/gds/RAM128.gds
+ARCHIVE_SOURCES := ./caravel/def/caravan_core.def ./caravel/def/caravel_core.def ./caravel/gds/user_analog_project_wrapper_empty.gds ./caravel/gds/user_project_wrapper_empty.gds ./verilog/rtl/Skywater_130nm/mag/mgmt_core.mag ./verilog/rtl/Skywater_130nm/gds/chip_io.gds ./verilog/rtl/Skywater_130nm/gds/DFFRAM.gds ./verilog/rtl/Skywater_130nm/gds/caravel.gds ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds ./verilog/rtl/Skywater_130nm/gds/storage.gds ./verilog/rtl/Skywater_130nm/gds/user_id_programming.gds ./verilog/rtl/Skywater_130nm/gds/mgmt_core.gds ./verilog/rtl/Skywater_130nm/gds/user_proj_example.gds ./verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds ./verilog/rtl/Skywater_130nm/gds/caravel.old.gds ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds ./verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds ./verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds ./verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds ./verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds ./verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds ./verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds ./verilog/rtl/Skywater_130nm/gds/digital_pll.gds ./verilog/rtl/Skywater_130nm/gds/simple_por.gds ./verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds ./openlane_master/dist/openlane-2.0.0b15.tar ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn ./openlane_master/.git/refs/remotes/origin/support-spef ./openlane_master/.git/logs/refs/remotes/origin/support-spef ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds ./mgmt_core_wrapper/gds/RAM256.gds ./mgmt_core_wrapper/gds/RAM128.gds
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 76)
 UPRJ_ROOT = $(shell pwd)
 # 'override' directive
@@ -273,14 +273,14 @@ PROJECT_ROOT = /home/benison/isp_cteTWLCEO
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 68)
 SUBMODULE = 0
 # environment
-MANAGERPID = 1789
+MANAGERPID = 1760
  
 # environment
 LC_MEASUREMENT = lzh_TW
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 24111
+GIO_LAUNCHED_DESKTOP_FILE_PID = 156590
 # makefile (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 43)
-LARGE_FILES_GZ_SPLIT := ./gds/user_proj_example.gds.gz.00.split ./gds/user_project_wrapper.gds.gz.00.split ./caravel/def/caravan_core.def.gz.00.split ./caravel/def/caravel_core.def.gz.00.split ./caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split ./caravel/gds/user_project_wrapper_empty.gds.gz.00.split ./verilog/rtl/Skywater_130nm/mag/mgmt_core.mag.gz.00.split ./verilog/rtl/Skywater_130nm/gds/chip_io.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/DFFRAM.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/caravel.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/storage.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_id_programming.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_core.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_proj_example.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/caravel.old.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/simple_por.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds.gz.00.split ./openlane_master/dist/openlane-2.0.0b15.tar.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM256.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
+LARGE_FILES_GZ_SPLIT := ./gds/user_proj_example.gds.gz.00.split ./gds/user_project_wrapper.gds.gz.00.split ./caravel/def/caravan_core.def.gz.00.split ./caravel/def/caravel_core.def.gz.00.split ./caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split ./caravel/gds/user_project_wrapper_empty.gds.gz.00.split ./verilog/rtl/Skywater_130nm/mag/mgmt_core.mag.gz.00.split ./verilog/rtl/Skywater_130nm/gds/chip_io.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/DFFRAM.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/caravel.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/storage.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_id_programming.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_core.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_proj_example.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/caravel.old.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/simple_por.gds.gz.00.split ./verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds.gz.00.split ./openlane_master/dist/openlane-2.0.0b15.tar.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn.gz.00.split ./openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn.gz.00.split ./openlane_master/.git/refs/remotes/origin/support-spef.gz.00.split ./openlane_master/.git/logs/refs/remotes/origin/support-spef.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split ./openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split ./mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split ./mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM256.gds.gz.00.split ./mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
 # environment
 _ = /usr/share/code/code
 # environment
@@ -294,7 +294,7 @@ OPENLANE_ROOT = /home/benison/isp_cteTWLCEO/dependencies/openlane_src
 # environment
 MPW_TAG = mpw-9d
 # environment
-JOURNAL_STREAM = 8:23390
+JOURNAL_STREAM = 8:24419
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -842,6 +842,15 @@ mag/user_project_wrapper.mag:
 #  Modification time never checked.
 #  File has not been updated.
 
+openlane_master/.git/refs/remotes/origin/support-spef: openlane_master/.git/refs/remotes/origin/support-spef.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane_master/.git/refs/remotes/origin/support-spef'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
 mgmt_core_wrapper/mag/mgmt_core_wrapper.mag: mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: 'mgmt_core_wrapper/mag/mgmt_core_wrapper.mag'
@@ -977,6 +986,7 @@ Makefile:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 lvs-user_proj_example: mag/user_proj_example.mag verilog/gl/user_proj_example.v
 #  Implicit rule search has not been done.
@@ -986,7 +996,6 @@ lvs-user_proj_example: mag/user_proj_example.mag verilog/gl/user_proj_example.v
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 316):
 	echo "Extracting $*"
 	mkdir -p ./mag/tmp
- 
 	echo "addpath $(CARAVEL_ROOT)/mag/hexdigits;\
 		addpath $(CARAVEL_ROOT)/mag/primitives;\
 		addpath $(MCW_ROOT)/mag;\
@@ -1092,6 +1101,12 @@ gds/user_project_wrapper.gds.gz.00.split: gds/user_project_wrapper.gds.gz
 
 # Not a target:
 verilog/rtl/Skywater_130nm/gds/simple_por.gds.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+openlane_master/.git/refs/remotes/origin/support-spef.gz:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -1215,6 +1230,15 @@ README.rst: README.src.rst docs/source/getting-started.rst docs/source/tool-vers
 				-e's@.. warning::@**WARNING:**@g' \
 				> openlane/README.rst
 
+openlane_master/.git/logs/refs/remotes/origin/support-spef: openlane_master/.git/logs/refs/remotes/origin/support-spef.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane_master/.git/logs/refs/remotes/origin/support-spef'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 238):
+	@$(UNCOMPRESS) $<
+	@echo "$< -> $@"
+
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
@@ -1316,6 +1340,7 @@ gds/user_proj_example.gds:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+ 
 
 # Not a target:
 verilog/gl/user_project_wrapper.v:
@@ -1340,7 +1365,6 @@ mag/:
 #  Modification time never checked.
 #  File has not been updated.
 
- 
 mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split: mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: 'mgmt_core_wrapper/gds/mgmt_core_wrapper.gds'
@@ -1647,6 +1671,7 @@ __final:
 # Not a target:
 verilog/rtl/Skywater_130nm/gds/user_proj_example.gds.gz:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -1655,7 +1680,6 @@ verilog/rtl/:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 lvs-maglef-user_project_wrapper: mag/user_project_wrapper.mag verilog/gl/user_project_wrapper.v
 #  Implicit rule search has not been done.
@@ -1727,7 +1751,7 @@ verilog/rtl/Skywater_130nm/gds/caravel.old.gds: verilog/rtl/Skywater_130nm/gds/c
 	@$(UNCOMPRESS) $<
 	@echo "$< -> $@"
 
-uncompress: caravel/def/caravan_core.def caravel/def/caravel_core.def caravel/gds/user_analog_project_wrapper_empty.gds caravel/gds/user_project_wrapper_empty.gds verilog/rtl/Skywater_130nm/mag/mgmt_core.mag verilog/rtl/Skywater_130nm/gds/chip_io.gds verilog/rtl/Skywater_130nm/gds/DFFRAM.gds verilog/rtl/Skywater_130nm/gds/caravel.gds verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds verilog/rtl/Skywater_130nm/gds/storage.gds verilog/rtl/Skywater_130nm/gds/user_id_programming.gds verilog/rtl/Skywater_130nm/gds/mgmt_core.gds verilog/rtl/Skywater_130nm/gds/user_proj_example.gds verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds verilog/rtl/Skywater_130nm/gds/caravel.old.gds verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds verilog/rtl/Skywater_130nm/gds/digital_pll.gds verilog/rtl/Skywater_130nm/gds/simple_por.gds verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds openlane_master/dist/openlane-2.0.0b15.tar openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug mgmt_core_wrapper/mag/mgmt_core_wrapper.mag mgmt_core_wrapper/gds/mgmt_core_wrapper.gds mgmt_core_wrapper/gds/RAM256.gds mgmt_core_wrapper/gds/RAM128.gds
+uncompress: caravel/def/caravan_core.def caravel/def/caravel_core.def caravel/gds/user_analog_project_wrapper_empty.gds caravel/gds/user_project_wrapper_empty.gds verilog/rtl/Skywater_130nm/mag/mgmt_core.mag verilog/rtl/Skywater_130nm/gds/chip_io.gds verilog/rtl/Skywater_130nm/gds/DFFRAM.gds verilog/rtl/Skywater_130nm/gds/caravel.gds verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds verilog/rtl/Skywater_130nm/gds/storage.gds verilog/rtl/Skywater_130nm/gds/user_id_programming.gds verilog/rtl/Skywater_130nm/gds/mgmt_core.gds verilog/rtl/Skywater_130nm/gds/user_proj_example.gds verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds verilog/rtl/Skywater_130nm/gds/caravel.old.gds verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds verilog/rtl/Skywater_130nm/gds/digital_pll.gds verilog/rtl/Skywater_130nm/gds/simple_por.gds verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds openlane_master/dist/openlane-2.0.0b15.tar openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn openlane_master/.git/refs/remotes/origin/support-spef openlane_master/.git/logs/refs/remotes/origin/support-spef openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug mgmt_core_wrapper/mag/mgmt_core_wrapper.mag mgmt_core_wrapper/gds/mgmt_core_wrapper.gds mgmt_core_wrapper/gds/RAM256.gds mgmt_core_wrapper/gds/RAM128.gds
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -2046,13 +2070,13 @@ rcx-asic: def/asic.def
 		report_checks -fields {capacitance slew input_pins nets fanout} -path_delay min_max -group_count 5;\
 		report_check_types -max_slew -max_capacitance -max_fanout -violators;\
 		report_checks -to [all_outputs] -group_count 1000;\
+ 
 		" > ./def/tmp/sta_$*.tcl 
 	docker run -it -v $(OPENLANE_ROOT):/openlane -v $(PDK_ROOT):$(PDK_ROOT) -v $(PWD):/caravel -e PDK_ROOT=$(PDK_ROOT) -u $(shell id -u $(USER)):$(shell id -g $(USER)) $(OPENLANE_IMAGE_NAME) \
 	sh -c "cd /caravel; openroad -exit ./def/tmp/sta_$*.tcl |& tee ./def/tmp/sta_$*.log" 
 
 mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split: mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz
 #  Implicit rule search has not been done.
- 
 #  Implicit/static pattern stem: 'mgmt_core_wrapper/mag/mgmt_core_wrapper.mag'
 #  Modification time never checked.
 #  File has not been updated.
@@ -2396,6 +2420,7 @@ skywater-pdk:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
+ 
 #  File has not been updated.
 #  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 1252):
 	if [ -d "$(PDK_ROOT)/skywater-pdk" ]; then\
@@ -2410,7 +2435,6 @@ skywater-pdk:
 		git submodule update --init libraries/$(IO_LIBRARY)/latest && \
 		git submodule update --init libraries/$(SPECIAL_VOLTAGE_LIBRARY)/latest && \
 		git submodule update --init libraries/$(PRIMITIVES_LIBRARY)/latest && \
- 
 		$(MAKE) timing
 
 verilog/rtl/Skywater_130nm/gds/digital_pll.gds: verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz
@@ -2545,6 +2569,12 @@ openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example
 		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
 		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
 	fi
+
+# Not a target:
+openlane_master/.git/logs/refs/remotes/origin/support-spef.gz:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 install_mcw:
 #  Phony target (prerequisite of .PHONY).
@@ -2698,7 +2728,6 @@ caravel_timing_typ: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-m
 		read_spef -path gpio_defaults_block_37 ./spef/gpio_defaults_block.spef;\
 		read_spef ./spef/caravel.spef;\
 		read_sdc -echo ./sdc/caravel.sdc;\
- 
 		report_checks -path_delay min -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
 		report_checks -path_delay max -fields {slew cap input nets fanout} -format full_clock_expanded -group_count 50;\
 		report_worst_slack -max ;\
@@ -2885,6 +2914,7 @@ caravel_timing_slow: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-
 		report_checks -to mprj/user_irq[*] -unconstrained -group_count 32;\
 		report_checks -to mprj/la_data_in[*] -unconstrained -group_count 128;\
 		report_checks -to mprj/la_oenb[*] -unconstrained -group_count 128;\
+ 
 		" > ./def/tmp/caravel_timing_slow.tcl 
 	sta -exit ./def/tmp/caravel_timing_slow.tcl | tee ./signoff/caravel/caravel_timing_slow.log 
 
@@ -3311,13 +3341,13 @@ caravel_timing_fast: def/caravel.def sdc/caravel.sdc verilog/gl/caravel.v check-
 		report_worst_slack -max ;\
 		report_worst_slack -min ;\
 		echo \" Management Area Interface \";\
+ 
 		report_checks -to soc/core_clk -unconstrained -group_count 1;\
 		echo \" User project Interface \";\
 		report_checks -to mprj/wb_clk_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wb_rst_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_cyc_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_stb_i -unconstrained -group_count 1;\
- 
 		report_checks -to mprj/wbs_we_i -unconstrained -group_count 1;\
 		report_checks -to mprj/wbs_sel_i[*] -unconstrained -group_count 4;\
 		report_checks -to mprj/wbs_adr_i[*] -unconstrained -group_count 32;\
@@ -3338,6 +3368,19 @@ generate_fill: check-env check-uid check-project uncompress
 	@echo "Running generate_fill in the foreground..."
 	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __generate_fill
 	@echo "Generate fill completed." 2>&1 | tee -a ./signoff/build/generate_fill.out
+
+openlane_master/.git/logs/refs/remotes/origin/support-spef.gz.00.split: openlane_master/.git/logs/refs/remotes/origin/support-spef.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane_master/.git/logs/refs/remotes/origin/support-spef'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
 
 rcx-user_project_wrapper: def/user_project_wrapper.def
 #  Implicit rule search has not been done.
@@ -3477,6 +3520,19 @@ ship: check-env uncompress uncompress-caravel
 	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __ship
 	@echo "Make ship completed." 2>&1 | tee -a ./signoff/build/make_ship.out
 
+openlane_master/.git/refs/remotes/origin/support-spef.gz.00.split: openlane_master/.git/refs/remotes/origin/support-spef.gz
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: 'openlane_master/.git/refs/remotes/origin/support-spef'
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from '/home/benison/isp_cteTWLCEO/caravel/Makefile', line 222):
+	@if [ -n "$$(find "$<" -prune -size +$(FILE_SIZE_LIMIT_MB)M)" ]; then\
+		split $< -b $(FILE_SIZE_LIMIT_MB)M $<. -d &&\
+		rm $< &&\
+		for file in $$(ls $<.*); do mv "$$file" "$$file.split"; done &&\
+		echo -n "$< -> $$(ls $<.*.split)" | tr '\n' ' ' && echo "";\
+	fi
+
 # Not a target:
 gds/user_project_wrapper.gds:
 #  Implicit rule search has not been done.
@@ -3542,7 +3598,7 @@ truck: check-env uncompress uncompress-caravel
 	$(MAKE) -f $(CARAVEL_ROOT)/Makefile __truck
 	@echo "Make truck completed." 2>&1 | tee -a ./signoff/build/make_truck.out
 
-compress: gds/user_proj_example.gds.gz gds/user_project_wrapper.gds.gz gds/user_proj_example.gds.gz.00.split gds/user_project_wrapper.gds.gz.00.split caravel/def/caravan_core.def.gz.00.split caravel/def/caravel_core.def.gz.00.split caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split caravel/gds/user_project_wrapper_empty.gds.gz.00.split verilog/rtl/Skywater_130nm/mag/mgmt_core.mag.gz.00.split verilog/rtl/Skywater_130nm/gds/chip_io.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/DFFRAM.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/caravel.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/storage.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/user_id_programming.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mgmt_core.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/user_proj_example.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/caravel.old.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/simple_por.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds.gz.00.split openlane_master/dist/openlane-2.0.0b15.tar.gz.00.split openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn.gz.00.split openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn.gz.00.split openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn.gz.00.split openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn.gz.00.split openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split mgmt_core_wrapper/gds/RAM256.gds.gz.00.split mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
+compress: gds/user_proj_example.gds.gz gds/user_project_wrapper.gds.gz gds/user_proj_example.gds.gz.00.split gds/user_project_wrapper.gds.gz.00.split caravel/def/caravan_core.def.gz.00.split caravel/def/caravel_core.def.gz.00.split caravel/gds/user_analog_project_wrapper_empty.gds.gz.00.split caravel/gds/user_project_wrapper_empty.gds.gz.00.split verilog/rtl/Skywater_130nm/mag/mgmt_core.mag.gz.00.split verilog/rtl/Skywater_130nm/gds/chip_io.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/DFFRAM.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/caravel.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/user_project_wrapper_empty.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/storage.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/user_id_programming.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mgmt_core.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/user_proj_example.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mprj2_logic_high.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/caravel.old.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/user_project_wrapper.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/sky130_fd_sc_hvl__lsbufhv2lv_1_wrapped.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/gpio_control_block.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mgmt_protect.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/sram_1rw1r_32_256_8_sky130.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mgmt_protect_hv.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/advSeal_6um_gen.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/digital_pll.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/simple_por.gds.gz.00.split verilog/rtl/Skywater_130nm/gds/mprj_logic_high.gds.gz.00.split openlane_master/dist/openlane-2.0.0b15.tar.gz.00.split openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.emptyFile.jsn.gz.00.split openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/decimal.jsn.gz.00.split openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.test1.jsn.gz.00.split openlane_master/venv/lib/python3.10/site-packages/pyarrow/tests/data/orc/TestOrcFile.testDate1900.jsn.gz.00.split openlane_master/.git/refs/remotes/origin/support-spef.gz.00.split openlane_master/.git/logs/refs/remotes/origin/support-spef.gz.00.split openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.error.gz.00.split openlane/user_proj_example/runs/23_09_17_18_09/reports/signoff/user_proj_example.rpt.debug.gz.00.split openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.error.gz.00.split openlane/user_proj_example/runs/23_09_16_15_32/reports/signoff/user_proj_example.rpt.debug.gz.00.split mgmt_core_wrapper/mag/mgmt_core_wrapper.mag.gz.00.split mgmt_core_wrapper/gds/mgmt_core_wrapper.gds.gz.00.split mgmt_core_wrapper/gds/RAM256.gds.gz.00.split mgmt_core_wrapper/gds/RAM128.gds.gz.00.split
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -3566,27 +3622,25 @@ def/user_project_wrapper.def:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=218/1024=21%, Rehash=0, Collisions=48/568=8%
+# Load=224/1024=22%, Rehash=0, Collisions=48/582=8%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 2 (1) / strings = 238 / storage = 9079 B / avg = 38 B
-# current buf: size = 8162 B / used = 958 B / count = 63 / avg = 15 B
-# other used: total = 8121 B / count = 175 / avg = 46 B
-# other free: total = 41 B / max = 41 B / min = 41 B / avg = 41 B
+# strcache buffers: 2 (1) / strings = 244 / storage = 9448 B / avg = 38 B
+# current buf: size = 8162 B / used = 1313 B / count = 81 / avg = 16 B
+# other used: total = 8135 B / count = 163 / avg = 49 B
+# other free: total = 27 B / max = 27 B / min = 27 B / avg = 27 B
 
-# strcache performance: lookups = 771 / hit rate = 69%
+# strcache performance: lookups = 791 / hit rate = 69%
 # hash-table stats:
-# Load=238/8192=3%, Rehash=0, Collisions=7/771=1%
-# Finished Make data base on Wed Nov 15 18:19:42 2023
+# Load=244/8192=3%, Rehash=0, Collisions=7/791=1%
+# Finished Make data base on Tue Nov 21 17:36:11 2023
 
 # make[1]: Leaving directory '/home/benison/isp_cteTWLCEO'
  
-make: *** [Makefile:93: all] Error 2
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -3594,7 +3648,7 @@ make: *** [Makefile:93: all] Error 2
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Nov 15 18:19:42 2023
+# Make data base, printed on Tue Nov 21 17:36:11 2023
 
 # Variables
 
@@ -3659,7 +3713,7 @@ VSCODE_CODE_CACHE_PATH = /home/benison/.config/Code/CachedData/1a5daa3a0231a0fbb
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.2LBOE2
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.ZINRE2
 # default
 .LOADED := 
 # default
@@ -3705,7 +3759,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 24111
+VSCODE_PID = 156590
 # makefile (from 'Makefile', line 118)
 dv_patterns = $(shell cd verilog/dv && find * -maxdepth 0 -type d)
 # environment
@@ -3713,7 +3767,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1926,unix/benison-VirtualBox:/tmp/.ICE-unix/1926
+SESSION_MANAGER = local/benison-VirtualBox:@/tmp/.ICE-unix/1901,unix/benison-VirtualBox:/tmp/.ICE-unix/1901
 # automatic
 *F = $(notdir $*)
 # makefile (from 'Makefile', line 51)
@@ -3769,7 +3823,7 @@ TARGET_PATH = $(shell pwd)
 # makefile (from 'Makefile', line 45)
 OPENLANE_TAG = 2023.07.19
 # environment
-INVOCATION_ID = 17f190d94f7e418b937476efe46a4077
+INVOCATION_ID = 7461904b89054483b9d0df471c1b293d
 # environment
 USERNAME = benison
 # makefile (from 'Makefile', line 32)
@@ -3807,7 +3861,7 @@ DISABLE_LVS = 0
 # makefile
 .DEFAULT_GOAL := install
 # environment
-SYSTEMD_EXEC_PID = 1963
+SYSTEMD_EXEC_PID = 1923
 # makefile (from 'Makefile', line 307)
 TIMING_ROOT = $(shell pwd)/dependencies/timing-scripts
 # environment
@@ -3829,11 +3883,11 @@ OPEN_PDKS_COMMIT = 78b7bc32ddb4b6f14f76883c2e2dc5b5de9d1cbc
 # makefile (from 'Makefile', line 308)
 PROJECT_ROOT = $(CUP_ROOT)
 # environment
-MANAGERPID = 1789
+MANAGERPID = 1760
 # environment
 LC_MEASUREMENT = lzh_TW
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 24111
+GIO_LAUNCHED_DESKTOP_FILE_PID = 156590
 # environment
 _ = /usr/share/code/code
 # environment
@@ -3845,7 +3899,7 @@ OPENLANE_ROOT = $(PWD)/dependencies/openlane_src
 # makefile (from 'Makefile', line 46)
 MPW_TAG = mpw-9d
 # environment
-JOURNAL_STREAM = 8:23390
+JOURNAL_STREAM = 8:24419
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -3865,11 +3919,13 @@ PRECHECK_ROOT = ${HOME}/mpw_precheck
 # makefile (from 'Makefile', line 119)
 dv-targets-rtl = $(dv_patterns:%=verify-%-rtl)
 # makefile (from 'Makefile', line 124)
- 
 verify_command = "source ~/.bashrc && cd ${TARGET_PATH}/verilog/dv/$* && export SIM=${SIM} && make"
 # environment
 IM_CONFIG_PHASE = 1
 # default
+ 
+make: *** [Makefile:93: all] Error 2
+
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
@@ -4148,11 +4204,11 @@ uninstall:
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 221):
 	rm -rf $(CARAVEL_ROOT)
- 
 
 caravel-sta: env/spef-mapping.tcl
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 390):
@@ -4451,6 +4507,7 @@ install:
 	if [ -d "$(CARAVEL_ROOT)" ]; then\
 		echo "Deleting exisiting $(CARAVEL_ROOT)" && \
 		rm -rf $(CARAVEL_ROOT) && sleep 2;\
+ 
 	fi
 	echo "Installing $(CARAVEL_NAME).."
 	git clone -b $(CARAVEL_TAG) $(CARAVEL_REPO) $(CARAVEL_ROOT) --depth=1
@@ -4458,7 +4515,6 @@ install:
 asic:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
- 
 #  Implicit/static pattern stem: 'asic'
 #  File does not exist.
 #  File has not been updated.
@@ -4645,6 +4701,6 @@ run-precheck: check-pdk check-precheck
 # strcache performance: lookups = 345 / hit rate = 68%
 # hash-table stats:
 # Load=110/8192=1%, Rehash=0, Collisions=6/345=2%
-# Finished Make data base on Wed Nov 15 18:19:42 2023
+# Finished Make data base on Tue Nov 21 17:36:11 2023
 
  
