@@ -192,18 +192,6 @@ module user_proj_example #(
                     .VABIASN(VBIASN),
                     .OUT(CLK_OUT),
                     )    
-            // Module LVDStop marco IP for mipi_data_1
-            LVDStop LVDS_MIPI_DATA_1
-                    (
-                    .VDD(VDD),
-                    .GND(GND),
-                    .C1(C1),
-                    .INP(MIPI_inout(13:13)),
-                    .INN(MIPI_inout(12:12)),
-                    .VABIASN(VBIASN),
-                    .OUT(MIPI_D1_OUT),
-                    )  
-
             // Module LVDStop marco IP for mipi_data_0
             LVDStop LVDS_MIPI_DATA_0
                     (
@@ -214,27 +202,72 @@ module user_proj_example #(
                     .INN(MIPI_inout(10:10)),
                     .VABIASN(VBIASN),
                     .OUT(MIPI_D0_OUT),
-                    )                  
-
-            //MIPI0 Data in
-                mipi_rx_raw10_depacker mipi0_enable
+                    )  
+                    
+            //MIPI-0 Data in
+            mipi_csi_rx_packet_decoder_8b2lane mipi0_enable
 					(
-                    .wb_clk_i(CLK_OUT)
-                    .wbs_stb_i(wbs_stb_i)
+                    .clk_i(CLK_OUT)
+                    .data_valid_i(data_valid_i)
                     .data_i(MIPI_D0_OUT)
+                    .data_0(data_0)
                     .output_valid_o(output_valid_o)
-                    .output_o(mipi_data_raw_hw0)       
-					)
+                    .packet_length_o(packet_length_o)
+                    .packet_type_o(packet_type_o)      
+                    .output_valid_reg(output_valid_lane_0)
+                    )
 
-            //MIPI1 Data in
-                mipi_rx_raw10_depacker mipi0_enable
+            // isp module enable for lane0
+            ispCte_top 
+                #(.BITS(BITS)) isp_lane0
+                    (   .pclk(pclk),
+                        .rst_n(rst_n),
+                        .([BITS-1:0]in_raw([BITS-1:0]output_valid_lane_0)),
+                        .out_y(out_y_0),
+                        .out_u(out_u_0),
+                        .out_v(out_v_0)
+                )
+            	// module DAC_cabin_out_data
+	//		ntsc_composite_top_de2 lane0_cabin_out
+
+
+
+            // Module LVDStop marco IP for mipi_data_1
+            LVDStop LVDS_MIPI_DATA_1
+                    (
+                    .VDD(VDD),
+                    .GND(GND),
+                    .C1(C1),
+                    .INP(MIPI_inout(13:13)),
+                    .INN(MIPI_inout(12:12)),
+                    .VABIASN(VBIASN),
+                    .OUT(MIPI_D1_OUT),
+                    )                  
+            //MIPI-1 Data in
+            mipi_csi_rx_packet_decoder_8b2lane mipi1_enable
 					(
-                    .wb_clk_i(CLK_OUT)
-                    .wbs_stb_i(wbs_stb_i)
-                    .data_i(MIPI_D1_OUT)
-                    .output_valid_o(output_valid_o)
-                    .output_o(mipi_data_raw_hw1)       
-					)
+                    .clk_i(CLK_OUT),
+                    .data_valid_i(data_valid_i),
+                    .data_i(MIPI_D1_OUT),
+                    .data_0(data_0),
+                    .output_valid_o(output_valid_o),
+                    .packet_length_o(packet_length_o),
+                    .packet_type_o(packet_type_o),      
+                    .output_valid_reg(output_valid_lane_1),
+                    )
+
+            // isp module enable for lane1
+            ispCte_top 
+                #(.BITS(BITS)) isp_lane1
+                    (   .pclk(pclk),
+                        .rst_n(rst_n),
+                        .([BITS-1:0]in_raw([BITS-1:0]output_valid_lane_1)),
+                        .out_y(out_y_1),
+                        .out_u(out_u_1),
+                        .out_v(out_v_1)
+                )
+            	// module DAC_cabin_out_data
+	//		ntsc_composite_top_de2 lane0_cabin_out
 
 
 				assign wbs_dat_i = 	 mipi_data_raw_hw

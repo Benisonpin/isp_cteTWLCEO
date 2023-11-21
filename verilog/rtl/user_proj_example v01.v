@@ -163,7 +163,7 @@ module user_proj_example #(
         begin
         if (wb_rst_i) 
             begin
-//      1.01:  START Bit Detection
+//      1.01:  START I2C_protocal Bit Detection
             always @(negedge sda_i or snegedge sda_o) 
                 begin
                 if (scl_o == 1 or scl_i == 1 ) 
@@ -213,7 +213,7 @@ module user_proj_example #(
                     .INP(MIPI_inout(11:11)),
                     .INN(MIPI_inout(10:10)),
                     .VABIASN(VBIASN),
-                    .OUT(MIPI_D1_OUT),
+                    .OUT(MIPI_D0_OUT),
                     )                  
 
 
